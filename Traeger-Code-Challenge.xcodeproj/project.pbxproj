@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF27E91723C702D50083E9EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E91623C702D50083E9EA /* SceneDelegate.swift */; };
+		FF27E91923C702D50083E9EA /* BusinessSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E91823C702D50083E9EA /* BusinessSearchView.swift */; };
+		FF27E91B23C702D90083E9EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF27E91A23C702D90083E9EA /* Assets.xcassets */; };
+		FF27E91E23C702D90083E9EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF27E91D23C702D90083E9EA /* Preview Assets.xcassets */; };
+		FF27E92123C702D90083E9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF27E91F23C702D90083E9EA /* LaunchScreen.storyboard */; };
+		FF27E92C23C702D90083E9EA /* Traeger_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E92B23C702D90083E9EA /* Traeger_Code_ChallengeTests.swift */; };
+		FF27E93723C702D90083E9EA /* Traeger_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E93623C702D90083E9EA /* Traeger_Code_ChallengeUITests.swift */; };
+		FF27E94523C702F30083E9EA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E94423C702F30083E9EA /* DataController.swift */; };
+		FF27E94723C703150083E9EA /* YelpNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E94623C703150083E9EA /* YelpNetwork.swift */; };
+		FF27E94923C7037B0083E9EA /* GraphQLQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E94823C7037B0083E9EA /* GraphQLQuery.swift */; };
+		FF27E94B23C703960083E9EA /* SearchQueryDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E94A23C703960083E9EA /* SearchQueryDataResponse.swift */; };
+		FF27E94D23C703B30083E9EA /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E94C23C703B30083E9EA /* Business.swift */; };
+		FF27E94F23C703D20083E9EA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E94E23C703D20083E9EA /* Location.swift */; };
+		FF27E95223C7041B0083E9EA /* YelpEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E95123C7041B0083E9EA /* YelpEndpoint.swift */; };
+		FF27E95423C704990083E9EA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E95323C704990083E9EA /* Category.swift */; };
+		FF27E95823C84E3C0083E9EA /* SearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E95723C84E3C0083E9EA /* SearchQuery.swift */; };
+		FF27E95A23C8504C0083E9EA /* BusinessSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E95923C8504C0083E9EA /* BusinessSearchViewModel.swift */; };
+		FF27E95C23C850EA0083E9EA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E95B23C850EA0083E9EA /* ViewModel.swift */; };
+		FF27E95F23C85D750083E9EA /* SearchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E95E23C85D750083E9EA /* SearchEndpoint.swift */; };
+		FF27E96B23C86A080083E9EA /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E96A23C86A080083E9EA /* ImageCacher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF27E92823C702D90083E9EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF27E90923C702D50083E9EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF27E91023C702D50083E9EA;
+			remoteInfo = "Traeger-Code-Challenge";
+		};
+		FF27E93323C702D90083E9EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF27E90923C702D50083E9EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF27E91023C702D50083E9EA;
+			remoteInfo = "Traeger-Code-Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF27E91123C702D50083E9EA /* Traeger-Code-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Traeger-Code-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF27E91623C702D50083E9EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF27E91823C702D50083E9EA /* BusinessSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchView.swift; sourceTree = "<group>"; };
+		FF27E91A23C702D90083E9EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF27E91D23C702D90083E9EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF27E92023C702D90083E9EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF27E92223C702D90083E9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF27E92723C702D90083E9EA /* Traeger-Code-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Traeger-Code-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF27E92B23C702D90083E9EA /* Traeger_Code_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traeger_Code_ChallengeTests.swift; sourceTree = "<group>"; };
+		FF27E92D23C702D90083E9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF27E93223C702D90083E9EA /* Traeger-Code-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Traeger-Code-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF27E93623C702D90083E9EA /* Traeger_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traeger_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
+		FF27E93823C702D90083E9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF27E94423C702F30083E9EA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		FF27E94623C703150083E9EA /* YelpNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpNetwork.swift; sourceTree = "<group>"; };
+		FF27E94823C7037B0083E9EA /* GraphQLQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLQuery.swift; sourceTree = "<group>"; };
+		FF27E94A23C703960083E9EA /* SearchQueryDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueryDataResponse.swift; sourceTree = "<group>"; };
+		FF27E94C23C703B30083E9EA /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		FF27E94E23C703D20083E9EA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FF27E95123C7041B0083E9EA /* YelpEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpEndpoint.swift; sourceTree = "<group>"; };
+		FF27E95323C704990083E9EA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FF27E95723C84E3C0083E9EA /* SearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQuery.swift; sourceTree = "<group>"; };
+		FF27E95923C8504C0083E9EA /* BusinessSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchViewModel.swift; sourceTree = "<group>"; };
+		FF27E95B23C850EA0083E9EA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FF27E95E23C85D750083E9EA /* SearchEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEndpoint.swift; sourceTree = "<group>"; };
+		FF27E96A23C86A080083E9EA /* ImageCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF27E90E23C702D50083E9EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF27E92423C702D90083E9EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF27E92F23C702D90083E9EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF27E90823C702D50083E9EA = {
+			isa = PBXGroup;
+			children = (
+				FF27E91323C702D50083E9EA /* Traeger-Code-Challenge */,
+				FF27E92A23C702D90083E9EA /* Traeger-Code-ChallengeTests */,
+				FF27E93523C702D90083E9EA /* Traeger-Code-ChallengeUITests */,
+				FF27E91223C702D50083E9EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF27E91223C702D50083E9EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E91123C702D50083E9EA /* Traeger-Code-Challenge.app */,
+				FF27E92723C702D90083E9EA /* Traeger-Code-ChallengeTests.xctest */,
+				FF27E93223C702D90083E9EA /* Traeger-Code-ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF27E91323C702D50083E9EA /* Traeger-Code-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E96023C85D990083E9EA /* Utility */,
+				FF27E95D23C85BF20083E9EA /* BusinessSearchView */,
+				FF27E96423C860870083E9EA /* Yelp */,
+				FF27E95023C703F20083E9EA /* Models */,
+			);
+			path = "Traeger-Code-Challenge";
+			sourceTree = "<group>";
+		};
+		FF27E91C23C702D90083E9EA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E91D23C702D90083E9EA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF27E92A23C702D90083E9EA /* Traeger-Code-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E92B23C702D90083E9EA /* Traeger_Code_ChallengeTests.swift */,
+				FF27E92D23C702D90083E9EA /* Info.plist */,
+			);
+			path = "Traeger-Code-ChallengeTests";
+			sourceTree = "<group>";
+		};
+		FF27E93523C702D90083E9EA /* Traeger-Code-ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E93623C702D90083E9EA /* Traeger_Code_ChallengeUITests.swift */,
+				FF27E93823C702D90083E9EA /* Info.plist */,
+			);
+			path = "Traeger-Code-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		FF27E95023C703F20083E9EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E94823C7037B0083E9EA /* GraphQLQuery.swift */,
+				FF27E95723C84E3C0083E9EA /* SearchQuery.swift */,
+				FF27E94A23C703960083E9EA /* SearchQueryDataResponse.swift */,
+				FF27E94C23C703B30083E9EA /* Business.swift */,
+				FF27E94E23C703D20083E9EA /* Location.swift */,
+				FF27E95323C704990083E9EA /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF27E95D23C85BF20083E9EA /* BusinessSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E91823C702D50083E9EA /* BusinessSearchView.swift */,
+				FF27E95923C8504C0083E9EA /* BusinessSearchViewModel.swift */,
+			);
+			path = BusinessSearchView;
+			sourceTree = "<group>";
+		};
+		FF27E96023C85D990083E9EA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E94423C702F30083E9EA /* DataController.swift */,
+				FF27E95B23C850EA0083E9EA /* ViewModel.swift */,
+				FF27E91623C702D50083E9EA /* SceneDelegate.swift */,
+				FF27E91A23C702D90083E9EA /* Assets.xcassets */,
+				FF27E91F23C702D90083E9EA /* LaunchScreen.storyboard */,
+				FF27E92223C702D90083E9EA /* Info.plist */,
+				FF27E91C23C702D90083E9EA /* Preview Content */,
+				FF27E96A23C86A080083E9EA /* ImageCacher.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		FF27E96123C85DB20083E9EA /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E95123C7041B0083E9EA /* YelpEndpoint.swift */,
+				FF27E95E23C85D750083E9EA /* SearchEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		FF27E96423C860870083E9EA /* Yelp */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E94623C703150083E9EA /* YelpNetwork.swift */,
+				FF27E96123C85DB20083E9EA /* Endpoint */,
+			);
+			path = Yelp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF27E91023C702D50083E9EA /* Traeger-Code-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF27E93B23C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-Challenge" */;
+			buildPhases = (
+				FF27E90D23C702D50083E9EA /* Sources */,
+				FF27E90E23C702D50083E9EA /* Frameworks */,
+				FF27E90F23C702D50083E9EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Traeger-Code-Challenge";
+			productName = "Traeger-Code-Challenge";
+			productReference = FF27E91123C702D50083E9EA /* Traeger-Code-Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF27E92623C702D90083E9EA /* Traeger-Code-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF27E93E23C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-ChallengeTests" */;
+			buildPhases = (
+				FF27E92323C702D90083E9EA /* Sources */,
+				FF27E92423C702D90083E9EA /* Frameworks */,
+				FF27E92523C702D90083E9EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF27E92923C702D90083E9EA /* PBXTargetDependency */,
+			);
+			name = "Traeger-Code-ChallengeTests";
+			productName = "Traeger-Code-ChallengeTests";
+			productReference = FF27E92723C702D90083E9EA /* Traeger-Code-ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF27E93123C702D90083E9EA /* Traeger-Code-ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF27E94123C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-ChallengeUITests" */;
+			buildPhases = (
+				FF27E92E23C702D90083E9EA /* Sources */,
+				FF27E92F23C702D90083E9EA /* Frameworks */,
+				FF27E93023C702D90083E9EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF27E93423C702D90083E9EA /* PBXTargetDependency */,
+			);
+			name = "Traeger-Code-ChallengeUITests";
+			productName = "Traeger-Code-ChallengeUITests";
+			productReference = FF27E93223C702D90083E9EA /* Traeger-Code-ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF27E90923C702D50083E9EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Kyle Stewart";
+				TargetAttributes = {
+					FF27E91023C702D50083E9EA = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					FF27E92623C702D90083E9EA = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = FF27E91023C702D50083E9EA;
+					};
+					FF27E93123C702D90083E9EA = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = FF27E91023C702D50083E9EA;
+					};
+				};
+			};
+			buildConfigurationList = FF27E90C23C702D50083E9EA /* Build configuration list for PBXProject "Traeger-Code-Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF27E90823C702D50083E9EA;
+			productRefGroup = FF27E91223C702D50083E9EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF27E91023C702D50083E9EA /* Traeger-Code-Challenge */,
+				FF27E92623C702D90083E9EA /* Traeger-Code-ChallengeTests */,
+				FF27E93123C702D90083E9EA /* Traeger-Code-ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF27E90F23C702D50083E9EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF27E92123C702D90083E9EA /* LaunchScreen.storyboard in Resources */,
+				FF27E91E23C702D90083E9EA /* Preview Assets.xcassets in Resources */,
+				FF27E91B23C702D90083E9EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF27E92523C702D90083E9EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF27E93023C702D90083E9EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF27E90D23C702D50083E9EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF27E96B23C86A080083E9EA /* ImageCacher.swift in Sources */,
+				FF27E94523C702F30083E9EA /* DataController.swift in Sources */,
+				FF27E95423C704990083E9EA /* Category.swift in Sources */,
+				FF27E94923C7037B0083E9EA /* GraphQLQuery.swift in Sources */,
+				FF27E91723C702D50083E9EA /* SceneDelegate.swift in Sources */,
+				FF27E95F23C85D750083E9EA /* SearchEndpoint.swift in Sources */,
+				FF27E95223C7041B0083E9EA /* YelpEndpoint.swift in Sources */,
+				FF27E95C23C850EA0083E9EA /* ViewModel.swift in Sources */,
+				FF27E94F23C703D20083E9EA /* Location.swift in Sources */,
+				FF27E94B23C703960083E9EA /* SearchQueryDataResponse.swift in Sources */,
+				FF27E95823C84E3C0083E9EA /* SearchQuery.swift in Sources */,
+				FF27E95A23C8504C0083E9EA /* BusinessSearchViewModel.swift in Sources */,
+				FF27E94D23C703B30083E9EA /* Business.swift in Sources */,
+				FF27E91923C702D50083E9EA /* BusinessSearchView.swift in Sources */,
+				FF27E94723C703150083E9EA /* YelpNetwork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF27E92323C702D90083E9EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF27E92C23C702D90083E9EA /* Traeger_Code_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF27E92E23C702D90083E9EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF27E93723C702D90083E9EA /* Traeger_Code_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF27E92923C702D90083E9EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF27E91023C702D50083E9EA /* Traeger-Code-Challenge */;
+			targetProxy = FF27E92823C702D90083E9EA /* PBXContainerItemProxy */;
+		};
+		FF27E93423C702D90083E9EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF27E91023C702D50083E9EA /* Traeger-Code-Challenge */;
+			targetProxy = FF27E93323C702D90083E9EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF27E91F23C702D90083E9EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF27E92023C702D90083E9EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF27E93923C702D90083E9EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF27E93A23C702D90083E9EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF27E93C23C702D90083E9EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Traeger-Code-Challenge/Utility/Preview Content\"";
+				DEVELOPMENT_TEAM = NZE2UWJUNX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Traeger-Code-Challenge/Utility/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF27E93D23C702D90083E9EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Traeger-Code-Challenge/Utility/Preview Content\"";
+				DEVELOPMENT_TEAM = NZE2UWJUNX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Traeger-Code-Challenge/Utility/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF27E93F23C702D90083E9EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZE2UWJUNX;
+				INFOPLIST_FILE = "Traeger-Code-ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Traeger-Code-Challenge.app/Traeger-Code-Challenge";
+			};
+			name = Debug;
+		};
+		FF27E94023C702D90083E9EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZE2UWJUNX;
+				INFOPLIST_FILE = "Traeger-Code-ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Traeger-Code-Challenge.app/Traeger-Code-Challenge";
+			};
+			name = Release;
+		};
+		FF27E94223C702D90083E9EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZE2UWJUNX;
+				INFOPLIST_FILE = "Traeger-Code-ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Traeger-Code-Challenge";
+			};
+			name = Debug;
+		};
+		FF27E94323C702D90083E9EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZE2UWJUNX;
+				INFOPLIST_FILE = "Traeger-Code-ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Traeger-Code-Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF27E90C23C702D50083E9EA /* Build configuration list for PBXProject "Traeger-Code-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF27E93923C702D90083E9EA /* Debug */,
+				FF27E93A23C702D90083E9EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF27E93B23C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF27E93C23C702D90083E9EA /* Debug */,
+				FF27E93D23C702D90083E9EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF27E93E23C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF27E93F23C702D90083E9EA /* Debug */,
+				FF27E94023C702D90083E9EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF27E94123C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF27E94223C702D90083E9EA /* Debug */,
+				FF27E94323C702D90083E9EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF27E90923C702D50083E9EA /* Project object */;
+}
