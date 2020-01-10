@@ -1,6 +1,6 @@
 //
-//  Traeger_Code_ChallengeUITests.swift
-//  Traeger-Code-ChallengeUITests
+//  GraphQL-Yelp-SearchUITests.swift
+//  GraphQL-Yelp-SearchUITests
 //
 //  Created by Kyle Stewart on 1/8/20.
 //  Copyright © 2020 Kyle Stewart. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Traeger_Code_ChallengeUITests: XCTestCase {
+class GraphQL_Yelp_SearchUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

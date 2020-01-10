@@ -1,13 +1,13 @@
 //
-//  Traeger_Code_ChallengeTests.swift
-//  Traeger-Code-ChallengeTests
+//  GraphQL_Yelp_SearchTests.swift
+//  GraphQL_Yelp_SearchTests
 //
 //  Created by Kyle Stewart on 1/8/20.
 //  Copyright © 2020 Kyle Stewart. All rights reserved.
 //
 
 import XCTest
-@testable import Traeger_Code_Challenge
+@testable import GraphQL_Yelp_Search
 
 class BusinessSearchViewModelTestCase: XCTestCase {
 
