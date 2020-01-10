@@ -12,8 +12,8 @@
 		FF27E91B23C702D90083E9EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF27E91A23C702D90083E9EA /* Assets.xcassets */; };
 		FF27E91E23C702D90083E9EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF27E91D23C702D90083E9EA /* Preview Assets.xcassets */; };
 		FF27E92123C702D90083E9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF27E91F23C702D90083E9EA /* LaunchScreen.storyboard */; };
-		FF27E92C23C702D90083E9EA /* Traeger_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E92B23C702D90083E9EA /* Traeger_Code_ChallengeTests.swift */; };
-		FF27E93723C702D90083E9EA /* Traeger_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E93623C702D90083E9EA /* Traeger_Code_ChallengeUITests.swift */; };
+		FF27E92C23C702D90083E9EA /* BusinessSearchViewModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E92B23C702D90083E9EA /* BusinessSearchViewModelTestCase.swift */; };
+		FF27E93723C702D90083E9EA /* GraphQL_Yelp_SearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E93623C702D90083E9EA /* GraphQL_Yelp_SearchUITests.swift */; };
 		FF27E94523C702F30083E9EA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E94423C702F30083E9EA /* DataController.swift */; };
 		FF27E94723C703150083E9EA /* YelpNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E94623C703150083E9EA /* YelpNetwork.swift */; };
 		FF27E94923C7037B0083E9EA /* GraphQLQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E94823C7037B0083E9EA /* GraphQLQuery.swift */; };
@@ -47,18 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FF27E91123C702D50083E9EA /* Traeger-Code-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Traeger-Code-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF27E91123C702D50083E9EA /* GraphQL-Yelp-Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GraphQL-Yelp-Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF27E91623C702D50083E9EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF27E91823C702D50083E9EA /* BusinessSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchView.swift; sourceTree = "<group>"; };
 		FF27E91A23C702D90083E9EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF27E91D23C702D90083E9EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF27E92023C702D90083E9EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF27E92223C702D90083E9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF27E92723C702D90083E9EA /* Traeger-Code-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Traeger-Code-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF27E92B23C702D90083E9EA /* Traeger_Code_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traeger_Code_ChallengeTests.swift; sourceTree = "<group>"; };
+		FF27E92723C702D90083E9EA /* GraphQL-Yelp-SearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GraphQL-Yelp-SearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF27E92B23C702D90083E9EA /* BusinessSearchViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchViewModelTestCase.swift; sourceTree = "<group>"; };
 		FF27E92D23C702D90083E9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF27E93223C702D90083E9EA /* Traeger-Code-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Traeger-Code-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF27E93623C702D90083E9EA /* Traeger_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traeger_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
+		FF27E93223C702D90083E9EA /* GraphQL-Yelp-SearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GraphQL-Yelp-SearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF27E93623C702D90083E9EA /* GraphQL_Yelp_SearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL_Yelp_SearchUITests.swift; sourceTree = "<group>"; };
 		FF27E93823C702D90083E9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF27E94423C702F30083E9EA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		FF27E94623C703150083E9EA /* YelpNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpNetwork.swift; sourceTree = "<group>"; };
@@ -103,9 +103,9 @@
 		FF27E90823C702D50083E9EA = {
 			isa = PBXGroup;
 			children = (
-				FF27E91323C702D50083E9EA /* Traeger-Code-Challenge */,
-				FF27E92A23C702D90083E9EA /* Traeger-Code-ChallengeTests */,
-				FF27E93523C702D90083E9EA /* Traeger-Code-ChallengeUITests */,
+				FF27E91323C702D50083E9EA /* GraphQL-Yelp-Search */,
+				FF27E92A23C702D90083E9EA /* GraphQL-Yelp-SearchTests */,
+				FF27E93523C702D90083E9EA /* GraphQL-Yelp-SearchUITests */,
 				FF27E91223C702D50083E9EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,14 +113,14 @@
 		FF27E91223C702D50083E9EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF27E91123C702D50083E9EA /* Traeger-Code-Challenge.app */,
-				FF27E92723C702D90083E9EA /* Traeger-Code-ChallengeTests.xctest */,
-				FF27E93223C702D90083E9EA /* Traeger-Code-ChallengeUITests.xctest */,
+				FF27E91123C702D50083E9EA /* GraphQL-Yelp-Search.app */,
+				FF27E92723C702D90083E9EA /* GraphQL-Yelp-SearchTests.xctest */,
+				FF27E93223C702D90083E9EA /* GraphQL-Yelp-SearchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF27E91323C702D50083E9EA /* Traeger-Code-Challenge */ = {
+		FF27E91323C702D50083E9EA /* GraphQL-Yelp-Search */ = {
 			isa = PBXGroup;
 			children = (
 				FF27E96023C85D990083E9EA /* Utility */,
@@ -128,33 +128,33 @@
 				FF27E96423C860870083E9EA /* Yelp */,
 				FF27E95023C703F20083E9EA /* Models */,
 			);
-			path = "Traeger-Code-Challenge";
+			path = "GraphQL-Yelp-Search";
 			sourceTree = "<group>";
 		};
-		FF27E91C23C702D90083E9EA /* Preview Content */ = {
+		FF27E91C23C702D90083E9EA /* PreviewContent */ = {
 			isa = PBXGroup;
 			children = (
 				FF27E91D23C702D90083E9EA /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			path = PreviewContent;
 			sourceTree = "<group>";
 		};
-		FF27E92A23C702D90083E9EA /* Traeger-Code-ChallengeTests */ = {
+		FF27E92A23C702D90083E9EA /* GraphQL-Yelp-SearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				FF27E92B23C702D90083E9EA /* Traeger_Code_ChallengeTests.swift */,
+				FF27E92B23C702D90083E9EA /* BusinessSearchViewModelTestCase.swift */,
 				FF27E92D23C702D90083E9EA /* Info.plist */,
 			);
-			path = "Traeger-Code-ChallengeTests";
+			path = "GraphQL-Yelp-SearchTests";
 			sourceTree = "<group>";
 		};
-		FF27E93523C702D90083E9EA /* Traeger-Code-ChallengeUITests */ = {
+		FF27E93523C702D90083E9EA /* GraphQL-Yelp-SearchUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FF27E93623C702D90083E9EA /* Traeger_Code_ChallengeUITests.swift */,
+				FF27E93623C702D90083E9EA /* GraphQL_Yelp_SearchUITests.swift */,
 				FF27E93823C702D90083E9EA /* Info.plist */,
 			);
-			path = "Traeger-Code-ChallengeUITests";
+			path = "GraphQL-Yelp-SearchUITests";
 			sourceTree = "<group>";
 		};
 		FF27E95023C703F20083E9EA /* Models */ = {
@@ -188,7 +188,7 @@
 				FF27E91A23C702D90083E9EA /* Assets.xcassets */,
 				FF27E91F23C702D90083E9EA /* LaunchScreen.storyboard */,
 				FF27E92223C702D90083E9EA /* Info.plist */,
-				FF27E91C23C702D90083E9EA /* Preview Content */,
+				FF27E91C23C702D90083E9EA /* PreviewContent */,
 				FF27E96A23C86A080083E9EA /* ImageCacher.swift */,
 			);
 			path = Utility;
@@ -215,9 +215,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF27E91023C702D50083E9EA /* Traeger-Code-Challenge */ = {
+		FF27E91023C702D50083E9EA /* GraphQL-Yelp-Search */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF27E93B23C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-Challenge" */;
+			buildConfigurationList = FF27E93B23C702D90083E9EA /* Build configuration list for PBXNativeTarget "GraphQL-Yelp-Search" */;
 			buildPhases = (
 				FF27E90D23C702D50083E9EA /* Sources */,
 				FF27E90E23C702D50083E9EA /* Frameworks */,
@@ -227,14 +227,14 @@
 			);
 			dependencies = (
 			);
-			name = "Traeger-Code-Challenge";
+			name = "GraphQL-Yelp-Search";
 			productName = "Traeger-Code-Challenge";
-			productReference = FF27E91123C702D50083E9EA /* Traeger-Code-Challenge.app */;
+			productReference = FF27E91123C702D50083E9EA /* GraphQL-Yelp-Search.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF27E92623C702D90083E9EA /* Traeger-Code-ChallengeTests */ = {
+		FF27E92623C702D90083E9EA /* GraphQL-Yelp-SearchTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF27E93E23C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-ChallengeTests" */;
+			buildConfigurationList = FF27E93E23C702D90083E9EA /* Build configuration list for PBXNativeTarget "GraphQL-Yelp-SearchTests" */;
 			buildPhases = (
 				FF27E92323C702D90083E9EA /* Sources */,
 				FF27E92423C702D90083E9EA /* Frameworks */,
@@ -245,14 +245,14 @@
 			dependencies = (
 				FF27E92923C702D90083E9EA /* PBXTargetDependency */,
 			);
-			name = "Traeger-Code-ChallengeTests";
+			name = "GraphQL-Yelp-SearchTests";
 			productName = "Traeger-Code-ChallengeTests";
-			productReference = FF27E92723C702D90083E9EA /* Traeger-Code-ChallengeTests.xctest */;
+			productReference = FF27E92723C702D90083E9EA /* GraphQL-Yelp-SearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FF27E93123C702D90083E9EA /* Traeger-Code-ChallengeUITests */ = {
+		FF27E93123C702D90083E9EA /* GraphQL-Yelp-SearchUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF27E94123C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-ChallengeUITests" */;
+			buildConfigurationList = FF27E94123C702D90083E9EA /* Build configuration list for PBXNativeTarget "GraphQL-Yelp-SearchUITests" */;
 			buildPhases = (
 				FF27E92E23C702D90083E9EA /* Sources */,
 				FF27E92F23C702D90083E9EA /* Frameworks */,
@@ -263,9 +263,9 @@
 			dependencies = (
 				FF27E93423C702D90083E9EA /* PBXTargetDependency */,
 			);
-			name = "Traeger-Code-ChallengeUITests";
+			name = "GraphQL-Yelp-SearchUITests";
 			productName = "Traeger-Code-ChallengeUITests";
-			productReference = FF27E93223C702D90083E9EA /* Traeger-Code-ChallengeUITests.xctest */;
+			productReference = FF27E93223C702D90083E9EA /* GraphQL-Yelp-SearchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -291,7 +291,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FF27E90C23C702D50083E9EA /* Build configuration list for PBXProject "Traeger-Code-Challenge" */;
+			buildConfigurationList = FF27E90C23C702D50083E9EA /* Build configuration list for PBXProject "GraphQL-Yelp-Search" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -304,9 +304,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF27E91023C702D50083E9EA /* Traeger-Code-Challenge */,
-				FF27E92623C702D90083E9EA /* Traeger-Code-ChallengeTests */,
-				FF27E93123C702D90083E9EA /* Traeger-Code-ChallengeUITests */,
+				FF27E91023C702D50083E9EA /* GraphQL-Yelp-Search */,
+				FF27E92623C702D90083E9EA /* GraphQL-Yelp-SearchTests */,
+				FF27E93123C702D90083E9EA /* GraphQL-Yelp-SearchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -365,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF27E92C23C702D90083E9EA /* Traeger_Code_ChallengeTests.swift in Sources */,
+				FF27E92C23C702D90083E9EA /* BusinessSearchViewModelTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF27E93723C702D90083E9EA /* Traeger_Code_ChallengeUITests.swift in Sources */,
+				FF27E93723C702D90083E9EA /* GraphQL_Yelp_SearchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,12 +382,12 @@
 /* Begin PBXTargetDependency section */
 		FF27E92923C702D90083E9EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF27E91023C702D50083E9EA /* Traeger-Code-Challenge */;
+			target = FF27E91023C702D50083E9EA /* GraphQL-Yelp-Search */;
 			targetProxy = FF27E92823C702D90083E9EA /* PBXContainerItemProxy */;
 		};
 		FF27E93423C702D90083E9EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF27E91023C702D50083E9EA /* Traeger-Code-Challenge */;
+			target = FF27E91023C702D50083E9EA /* GraphQL-Yelp-Search */;
 			targetProxy = FF27E93323C702D90083E9EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -523,15 +523,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Traeger-Code-Challenge/Utility/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "GraphQL-Yelp-Search/Utility/PreviewContent\"";
 				DEVELOPMENT_TEAM = NZE2UWJUNX;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Traeger-Code-Challenge/Utility/Info.plist";
+				INFOPLIST_FILE = "GraphQL-Yelp-Search/Utility/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-Challenge";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.GraphQL-Yelp-Search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -543,15 +543,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Traeger-Code-Challenge/Utility/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "GraphQL-Yelp-Search/Utility/PreviewContent\"";
 				DEVELOPMENT_TEAM = NZE2UWJUNX;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Traeger-Code-Challenge/Utility/Info.plist";
+				INFOPLIST_FILE = "GraphQL-Yelp-Search/Utility/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-Challenge";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.GraphQL-Yelp-Search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -565,18 +565,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZE2UWJUNX;
-				INFOPLIST_FILE = "Traeger-Code-ChallengeTests/Info.plist";
+				INFOPLIST_FILE = "GraphQL-Yelp-SearchTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-ChallengeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.GraphQL-Yelp-SearchTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Traeger-Code-Challenge.app/Traeger-Code-Challenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraphQL-Yelp-Search.app/GraphQL-Yelp-Search";
 			};
 			name = Debug;
 		};
@@ -587,18 +587,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZE2UWJUNX;
-				INFOPLIST_FILE = "Traeger-Code-ChallengeTests/Info.plist";
+				INFOPLIST_FILE = "GraphQL-Yelp-SearchTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-ChallengeTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.GraphQL-Yelp-SearchTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Traeger-Code-Challenge.app/Traeger-Code-Challenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraphQL-Yelp-Search.app/GraphQL-Yelp-Search";
 			};
 			name = Release;
 		};
@@ -608,17 +608,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZE2UWJUNX;
-				INFOPLIST_FILE = "Traeger-Code-ChallengeUITests/Info.plist";
+				INFOPLIST_FILE = "GraphQL-Yelp-SearchUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-ChallengeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.GraphQL-Yelp-SearchUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Traeger-Code-Challenge";
+				TEST_TARGET_NAME = "GraphQL-Yelp-Search";
 			};
 			name = Debug;
 		};
@@ -628,24 +628,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZE2UWJUNX;
-				INFOPLIST_FILE = "Traeger-Code-ChallengeUITests/Info.plist";
+				INFOPLIST_FILE = "GraphQL-Yelp-SearchUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.Traeger-Code-ChallengeUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylestewart.GraphQL-Yelp-SearchUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Traeger-Code-Challenge";
+				TEST_TARGET_NAME = "GraphQL-Yelp-Search";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF27E90C23C702D50083E9EA /* Build configuration list for PBXProject "Traeger-Code-Challenge" */ = {
+		FF27E90C23C702D50083E9EA /* Build configuration list for PBXProject "GraphQL-Yelp-Search" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF27E93923C702D90083E9EA /* Debug */,
@@ -654,7 +654,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF27E93B23C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-Challenge" */ = {
+		FF27E93B23C702D90083E9EA /* Build configuration list for PBXNativeTarget "GraphQL-Yelp-Search" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF27E93C23C702D90083E9EA /* Debug */,
@@ -663,7 +663,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF27E93E23C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-ChallengeTests" */ = {
+		FF27E93E23C702D90083E9EA /* Build configuration list for PBXNativeTarget "GraphQL-Yelp-SearchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF27E93F23C702D90083E9EA /* Debug */,
@@ -672,7 +672,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF27E94123C702D90083E9EA /* Build configuration list for PBXNativeTarget "Traeger-Code-ChallengeUITests" */ = {
+		FF27E94123C702D90083E9EA /* Build configuration list for PBXNativeTarget "GraphQL-Yelp-SearchUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF27E94223C702D90083E9EA /* Debug */,

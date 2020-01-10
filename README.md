@@ -1,4 +1,4 @@
-Traeger Coding Challenge
+GraphQL-Yelp-Search
 
 This app utilizes GraphQL to query data from Yelp about businesses according to the entered fields.
 

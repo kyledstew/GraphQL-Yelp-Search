@@ -1,6 +1,6 @@
 //
 //  BusinessSearchViewModel.swift
-//  Traeger-Code-Challenge
+//  GraphQL-Yelp-Search
 //
 //  Created by Kyle Stewart on 1/9/20.
 //  Copyright © 2020 Kyle Stewart. All rights reserved.
