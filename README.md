@@ -2,7 +2,7 @@ GraphQL-Yelp-Search
 
 This app utilizes GraphQL to query data from Yelp about businesses according to the entered fields.
 
-It also utilizes SwiftUI, MVVM, and Combine to manage data and display results to the user.
+It utilizes MVVM and Redux style architecture, SwiftUI and Combine to manage data and display results to the user.
 
 Things to Improve:
 
