@@ -16,13 +16,12 @@ class BusinessSearchViewModel {
     }
 }
 
-
-
+// MARK: - Objects used by ViewModel
 extension BusinessSearchViewModel {
     enum Event {
         case searchSelected
         case resultsLoaded(SearchDetails)
-        case loadMoreResults
+        case loadMoreResultsSelected
     }
 
     class SearchQuery: ObservableObject {
@@ -41,6 +40,7 @@ extension BusinessSearchViewModel {
     }
 }
 
+// MARK: - Conform to `ViewModel`
 extension BusinessSearchViewModel: ViewModel {
     func notify(event: Event) {
         switch event {
@@ -54,7 +54,7 @@ extension BusinessSearchViewModel: ViewModel {
             state.loadingResults = false
             state.results.append(contentsOf: results.business)
 
-        case .loadMoreResults:
+        case .loadMoreResultsSelected:
             state.loadingResults = true
             queryMoreData()
         }

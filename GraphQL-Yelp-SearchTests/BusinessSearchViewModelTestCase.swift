@@ -11,6 +11,25 @@ import XCTest
 
 class BusinessSearchViewModelTestCase: XCTestCase {
 
+    var mockBusiness: Business {
+        return Business(id: "",
+                        name: "",
+                        url: "",
+                        rating: 0,
+                        price: "",
+                        display_phone: "",
+                        photos: [],
+                        categories: [],
+                        location: Location(address1: "",
+                                           address2: "",
+                                           address3: "",
+                                           city: "",
+                                           state: "",
+                                           country: "",
+                                           postal_code: "",
+                                           formatted_address: ""))
+    }
+
     func testSearchEnteredNoInput() {
         let viewModel = BusinessSearchViewModel()
         viewModel.notify(event: .searchSelected)
@@ -25,28 +44,27 @@ class BusinessSearchViewModelTestCase: XCTestCase {
         XCTAssertTrue(viewModel.state.loadingResults)
     }
 
+    func testSearchClearPriorResults() {
+        let viewModel = BusinessSearchViewModel()
+        viewModel.state.results.append(mockBusiness)
+        viewModel.state.searchQuery.searchText = "Ramen"
+        viewModel.state.searchQuery.locationText = "Portland"
+        viewModel.notify(event: .searchSelected)
+        XCTAssertTrue(viewModel.state.results.isEmpty)
+    }
+
     func testResultsFound() {
         let viewModel = BusinessSearchViewModel()
         viewModel.state.loadingResults = true
-        let searchDetails = SearchDetails(total: 1,
-                                          business: [Business(id: "",
-                                                              name: "",
-                                                              url: "",
-                                                              rating: 0,
-                                                              price: "",
-                                                              display_phone: "",
-                                                              photos: [],
-                                                              categories: [],
-                                                              location: Location(address1: "",
-                                                                                 address2: "",
-                                                                                 address3: "",
-                                                                                 city: "",
-                                                                                 state: "",
-                                                                                 country: "",
-                                                                                 postal_code: "",
-                                                                                 formatted_address: ""))])
+        let searchDetails = SearchDetails(total: 1, business: [mockBusiness])
         viewModel.notify(event: .resultsLoaded(searchDetails))
         XCTAssertTrue(viewModel.state.results.count == 1)
         XCTAssertFalse(viewModel.state.loadingResults)
+    }
+
+    func testLoadMoreResults() {
+        let viewModel = BusinessSearchViewModel()
+        viewModel.notify(event: .loadMoreResultsSelected)
+        XCTAssertTrue(viewModel.state.loadingResults)
     }
 }

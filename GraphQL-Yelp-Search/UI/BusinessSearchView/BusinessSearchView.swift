@@ -39,9 +39,7 @@ struct BusinessSearchView: View {
                     Spacer()
 
                     List {
-                        Section(footer: Button(action: {
-                            self.viewModel.notify(event: .loadMoreResults)
-                        }, label: {
+                        Section(footer: Button(action: loadMoreSelected, label: {
                             HStack {
                                 Spacer()
 
@@ -73,7 +71,7 @@ struct BusinessSearchView: View {
     }
 
     private func loadMoreSelected() {
-        viewModel.notify(event: .loadMoreResults)
+        viewModel.notify(event: .loadMoreResultsSelected)
     }
 }
 
