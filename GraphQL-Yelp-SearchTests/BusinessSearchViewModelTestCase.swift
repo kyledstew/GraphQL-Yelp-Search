@@ -19,8 +19,8 @@ class BusinessSearchViewModelTestCase: XCTestCase {
 
     func testSearchEnteredWithInput() {
         let viewModel = BusinessSearchViewModel()
-        viewModel.state.searchText = "Ramen"
-        viewModel.state.locationText = "Portland"
+        viewModel.state.searchQuery.searchText = "Ramen"
+        viewModel.state.searchQuery.locationText = "Portland"
         viewModel.notify(event: .searchSelected)
         XCTAssertTrue(viewModel.state.loadingResults)
     }

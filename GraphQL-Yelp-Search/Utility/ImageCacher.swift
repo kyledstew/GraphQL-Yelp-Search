@@ -7,27 +7,63 @@
 //
 
 import UIKit
+import SwiftUI
 
 let imageCache = NSCache<AnyObject, AnyObject>()
 
-class ImageCacher {
-    static func downloadImage(url: URL, callback: @escaping () -> Void) {
-        // Check the cache
-        if let _ = imageCache.object(forKey: url as AnyObject) as? UIImage {
-            callback()
-            return
-        }
+class ImageCacher: ObservableObject {
 
-        // image does not available in cache.. so retrieving it from url...
-        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
-            if let data = data, let image = UIImage(data: data) {
-                imageCache.setObject(image, forKey: url as AnyObject)
-            }
-            callback()
-        }).resume()
+    @Published var image: Image?
+
+    var task: URLSessionTask?
+
+    init(url: URL?) {
+        if let url = url {
+            loadImage(url: url)
+        }
     }
 
-    static func getImage(url: URL) -> UIImage? {
-        return imageCache.object(forKey: url as AnyObject) as? UIImage
+    func loadImage(url: URL) {
+        if let image = loadImageFromCache(url: url) {
+            self.image = image
+        } else {
+            downloadImage(url: url) {
+                DispatchQueue.main.async {
+                    self.loadImage(url: url)
+                }
+            }
+        }
+    }
+
+    func cancel() {
+        task?.cancel()
+    }
+
+    /// Returns image with given url from cache
+    private func loadImageFromCache(url: URL) -> Image? {
+        if let image = imageCache.object(forKey: url as AnyObject) as? UIImage {
+            return Image(uiImage: image)
+        } else {
+            return nil
+        }
+    }
+
+    /// Add image to cache
+    private func addImageToCache(image: UIImage, url: URL) {
+        imageCache.setObject(image, forKey: url as AnyObject)
+    }
+
+    /// Download and caches image at given URL
+    private func downloadImage(url: URL, completion: @escaping () -> Void) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
+                if let data = data, let image = UIImage(data: data) {
+                    self.addImageToCache(image: image, url: url)
+                    completion()
+                }
+            })
+
+            self.task?.resume()
+        }
     }
 }

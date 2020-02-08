@@ -27,6 +27,9 @@
 		FF27E95C23C850EA0083E9EA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E95B23C850EA0083E9EA /* ViewModel.swift */; };
 		FF27E95F23C85D750083E9EA /* SearchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E95E23C85D750083E9EA /* SearchEndpoint.swift */; };
 		FF27E96B23C86A080083E9EA /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E96A23C86A080083E9EA /* ImageCacher.swift */; };
+		FF70B1DC23EE80B900E2ECC5 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70B1DB23EE80B900E2ECC5 /* ActivityIndicator.swift */; };
+		FF70B1DF23EE80E500E2ECC5 /* RestaurantInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70B1DE23EE80E500E2ECC5 /* RestaurantInfoView.swift */; };
+		FF70B1E123EE877F00E2ECC5 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70B1E023EE877F00E2ECC5 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		FF27E95B23C850EA0083E9EA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FF27E95E23C85D750083E9EA /* SearchEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEndpoint.swift; sourceTree = "<group>"; };
 		FF27E96A23C86A080083E9EA /* ImageCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
+		FF70B1DB23EE80B900E2ECC5 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		FF70B1DE23EE80E500E2ECC5 /* RestaurantInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoView.swift; sourceTree = "<group>"; };
+		FF70B1E023EE877F00E2ECC5 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				FF27E96023C85D990083E9EA /* Utility */,
-				FF27E95D23C85BF20083E9EA /* BusinessSearchView */,
+				FF70B1DA23EE317A00E2ECC5 /* UI */,
 				FF27E96423C860870083E9EA /* Yelp */,
 				FF27E95023C703F20083E9EA /* Models */,
 			);
@@ -182,14 +188,10 @@
 		FF27E96023C85D990083E9EA /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				FF70B1D923EE314F00E2ECC5 /* Resources */,
+				FF27E96A23C86A080083E9EA /* ImageCacher.swift */,
 				FF27E94423C702F30083E9EA /* DataController.swift */,
 				FF27E95B23C850EA0083E9EA /* ViewModel.swift */,
-				FF27E91623C702D50083E9EA /* SceneDelegate.swift */,
-				FF27E91A23C702D90083E9EA /* Assets.xcassets */,
-				FF27E91F23C702D90083E9EA /* LaunchScreen.storyboard */,
-				FF27E92223C702D90083E9EA /* Info.plist */,
-				FF27E91C23C702D90083E9EA /* PreviewContent */,
-				FF27E96A23C86A080083E9EA /* ImageCacher.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -210,6 +212,37 @@
 				FF27E96123C85DB20083E9EA /* Endpoint */,
 			);
 			path = Yelp;
+			sourceTree = "<group>";
+		};
+		FF70B1D923EE314F00E2ECC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E91C23C702D90083E9EA /* PreviewContent */,
+				FF27E91623C702D50083E9EA /* SceneDelegate.swift */,
+				FF27E91A23C702D90083E9EA /* Assets.xcassets */,
+				FF27E91F23C702D90083E9EA /* LaunchScreen.storyboard */,
+				FF27E92223C702D90083E9EA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF70B1DA23EE317A00E2ECC5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FF27E95D23C85BF20083E9EA /* BusinessSearchView */,
+				FF70B1DD23EE80CA00E2ECC5 /* Shared */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FF70B1DD23EE80CA00E2ECC5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FF70B1DE23EE80E500E2ECC5 /* RestaurantInfoView.swift */,
+				FF70B1DB23EE80B900E2ECC5 /* ActivityIndicator.swift */,
+				FF70B1E023EE877F00E2ECC5 /* RatingView.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,8 +376,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF70B1DF23EE80E500E2ECC5 /* RestaurantInfoView.swift in Sources */,
 				FF27E96B23C86A080083E9EA /* ImageCacher.swift in Sources */,
 				FF27E94523C702F30083E9EA /* DataController.swift in Sources */,
+				FF70B1E123EE877F00E2ECC5 /* RatingView.swift in Sources */,
 				FF27E95423C704990083E9EA /* Category.swift in Sources */,
 				FF27E94923C7037B0083E9EA /* GraphQLQuery.swift in Sources */,
 				FF27E91723C702D50083E9EA /* SceneDelegate.swift in Sources */,
@@ -355,6 +390,7 @@
 				FF27E94B23C703960083E9EA /* SearchQueryDataResponse.swift in Sources */,
 				FF27E95823C84E3C0083E9EA /* SearchQuery.swift in Sources */,
 				FF27E95A23C8504C0083E9EA /* BusinessSearchViewModel.swift in Sources */,
+				FF70B1DC23EE80B900E2ECC5 /* ActivityIndicator.swift in Sources */,
 				FF27E94D23C703B30083E9EA /* Business.swift in Sources */,
 				FF27E91923C702D50083E9EA /* BusinessSearchView.swift in Sources */,
 				FF27E94723C703150083E9EA /* YelpNetwork.swift in Sources */,
@@ -523,10 +559,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "GraphQL-Yelp-Search/Utility/PreviewContent\"";
+				DEVELOPMENT_ASSET_PATHS = "GraphQL-Yelp-Search/Utility/Resources/PreviewContent\"";
 				DEVELOPMENT_TEAM = NZE2UWJUNX;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "GraphQL-Yelp-Search/Utility/Info.plist";
+				INFOPLIST_FILE = "GraphQL-Yelp-Search/Utility/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,10 +579,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "GraphQL-Yelp-Search/Utility/PreviewContent\"";
+				DEVELOPMENT_ASSET_PATHS = "GraphQL-Yelp-Search/Utility/Resources/PreviewContent\"";
 				DEVELOPMENT_TEAM = NZE2UWJUNX;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "GraphQL-Yelp-Search/Utility/Info.plist";
+				INFOPLIST_FILE = "GraphQL-Yelp-Search/Utility/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

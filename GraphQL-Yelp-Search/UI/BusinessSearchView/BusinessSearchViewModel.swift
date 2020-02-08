@@ -16,17 +16,27 @@ class BusinessSearchViewModel {
     }
 }
 
+
+
 extension BusinessSearchViewModel {
     enum Event {
         case searchSelected
         case resultsLoaded(SearchDetails)
+        case loadMoreResults
+    }
+
+    class SearchQuery: ObservableObject {
+        @Published var searchText: String = ""
+        @Published var locationText: String = ""
+
+        var isValid: Bool {
+            return !searchText.isEmpty && !locationText.isEmpty
+        }
     }
 
     class State: ObservableObject {
-        @Published var searchText: String = ""
-        @Published var locationText: String = ""
+        @Published var searchQuery = SearchQuery()
         @Published var loadingResults: Bool = false
-
         @Published var results: [Business] = []
     }
 }
@@ -35,17 +45,29 @@ extension BusinessSearchViewModel: ViewModel {
     func notify(event: Event) {
         switch event {
         case .searchSelected:
-            guard !state.searchText.isEmpty, !state.locationText.isEmpty else { break }
+            guard state.searchQuery.isValid else { break}
+            state.results.removeAll()
             state.loadingResults = true
-            DataController.searchYelp(keyword: state.searchText, location: state.locationText, callback: handleSearchCallback)
+            queryMoreData()
 
         case let .resultsLoaded(results):
-                state.loadingResults = false
-                state.results = results.business
+            state.loadingResults = false
+            state.results.append(contentsOf: results.business)
+
+        case .loadMoreResults:
+            state.loadingResults = true
+            queryMoreData()
         }
     }
 
-    func handleSearchCallback(_ results: (Result<SearchDetails, Error>)) {
+    func queryMoreData() {
+        DataController.searchYelp(keyword: state.searchQuery.searchText,
+                                  location: state.searchQuery.locationText,
+                                  offset: state.results.count,
+                                  resultCompletion: handleSearchResult)
+    }
+
+    func handleSearchResult(_ results: (Result<SearchDetails, Error>)) {
         switch results {
         case let .success(results):
             DispatchQueue.main.async {

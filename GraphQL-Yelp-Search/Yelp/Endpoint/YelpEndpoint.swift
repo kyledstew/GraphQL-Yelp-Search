@@ -9,18 +9,22 @@
 import Foundation
 
 protocol YelpEndpoint {
-    var query: GraphQLQuery { get set }
-    var resultsCallback: (_ result: Result<T, Error>) -> Void { get set }
+    typealias ResultCompletion = (_ result: Result<T, Error>) -> Void
+
     associatedtype QueryResponse
     associatedtype T
-    func handleSearchRequestCallback(_ result: Result<QueryResponse, Error>)
+
+    var query: GraphQLQuery { get set }
+    var resultCompletion: ResultCompletion { get set }
+
+    func handleRequestResult(_ result: Result<QueryResponse, Error>)
 }
 
 extension YelpEndpoint where QueryResponse: Codable {
     func makeRequest() {
-        let request = YelpRequest(queryBody: query.queryData,
-                                  responseType: QueryResponse.self,
-                                  requestCallback: handleSearchRequestCallback(_:))
-        request.perform()
+        YelpRequest(queryBody: query.queryData,
+                    responseType: QueryResponse.self,
+                    completionHandler: handleRequestResult(_:))
+            .perform()
     }
 }

@@ -16,7 +16,7 @@ struct YelpNetworkConstants {
 struct YelpRequest<T> {
     var queryBody: Data
     var responseType: T.Type
-    var requestCallback: (Result<T, Swift.Error>) -> Void
+    var completionHandler: (Result<T, Swift.Error>) -> Void
 }
 
 extension YelpRequest where T: Codable {
@@ -37,7 +37,7 @@ extension YelpRequest where T: Codable {
 
     func handleResponse(_ data: Data?, _ response: URLResponse?, _ error: Error?) {
         if let error = error {
-            self.requestCallback(.failure(error))
+            self.completionHandler(.failure(error))
             return
         }
 
@@ -45,9 +45,9 @@ extension YelpRequest where T: Codable {
             let decoder = JSONDecoder()
             do {
                 let parsedData = try decoder.decode(self.responseType.self, from: data)
-                self.requestCallback(.success(parsedData))
+                self.completionHandler(.success(parsedData))
             } catch {
-                self.requestCallback(.failure(error))
+                self.completionHandler(.failure(error))
             }
             return
         }

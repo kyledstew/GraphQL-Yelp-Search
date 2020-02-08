@@ -9,12 +9,13 @@
 import Foundation
 
 struct DataController {
-    static func searchYelp(keyword: String, location: String, callback: @escaping (Result<SearchDetails, Error>) -> Void) {
-        let searchEndpoint = Yelp.SearchEndpoint(keyword: keyword, location: location, callback: callback)
+    typealias SearchYelpCompletion = (Result<SearchDetails, Error>) -> Void
+    static func searchYelp(keyword: String, location: String, limit: Int = 25, offset: Int = 0, resultCompletion: @escaping SearchYelpCompletion) {
+        let searchEndpoint = Yelp.SearchEndpoint(keyword: keyword,
+                                                 location: location,
+                                                 limit: limit,
+                                                 offset: offset,
+                                                 resultCompletion: resultCompletion)
         searchEndpoint.makeRequest()
-    }
-
-    static func downloadImage(url: URL, callback: @escaping () -> Void) {
-        ImageCacher.downloadImage(url: url, callback: callback)
     }
 }

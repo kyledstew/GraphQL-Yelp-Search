@@ -11,14 +11,16 @@ import Foundation
 struct SearchQuery: GraphQLQuery {
     var term: String
     var location: String
-    var limit: Int = 10
+    var limit: Int
+    var offset: Int
 
     var queryData: Data {
         let queryString = """
         {
         search(term: "\(term)",
         location: "\(location)",
-        limit: \(limit)) { \(SearchDetails.fieldsQuery)}
+        limit: \(limit),
+        offset: \(offset)) { \(SearchDetails.fieldsQuery)}
         }
         """
         return queryString.data(using: .utf8) ?? Data()

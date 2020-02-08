@@ -18,12 +18,6 @@ struct Business: Codable, GraphQLObject {
     var photos: [String]?
     var categories: [Category]
     var location: Location
-    var image: UIImage? {
-        guard let url = URL(string: photos?.first ?? "") else {
-            return nil
-        }
-        return ImageCacher.getImage(url: url)
-    }
 
     static var fieldsQuery: String {
         return """
