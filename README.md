@@ -22,3 +22,6 @@ I'd be interested to see what other solutions are out there.
 ---Status: PENDING---
 I looked at GraphQLSwift and ApolloGraphQL but didn't spend enough time researching the support for both.
 If I'm going to use a 3rd party library I want to make sure it was well supported and easy to use.
+
+4. Error Handling
+Currently if there is an error returned from any of the requests it is not displayed to the user.
