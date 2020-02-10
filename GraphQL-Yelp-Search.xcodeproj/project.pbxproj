@@ -131,8 +131,7 @@
 			children = (
 				FF27E96023C85D990083E9EA /* Utility */,
 				FF70B1DA23EE317A00E2ECC5 /* UI */,
-				FF27E96423C860870083E9EA /* Yelp */,
-				FF27E95023C703F20083E9EA /* Models */,
+				FF27E96423C860870083E9EA /* Networking */,
 			);
 			path = "GraphQL-Yelp-Search";
 			sourceTree = "<group>";
@@ -205,23 +204,24 @@
 			path = Endpoint;
 			sourceTree = "<group>";
 		};
-		FF27E96423C860870083E9EA /* Yelp */ = {
+		FF27E96423C860870083E9EA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				FF27E94623C703150083E9EA /* YelpNetwork.swift */,
 				FF27E96123C85DB20083E9EA /* Endpoint */,
+				FF27E95023C703F20083E9EA /* Models */,
 			);
-			path = Yelp;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		FF70B1D923EE314F00E2ECC5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FF27E91C23C702D90083E9EA /* PreviewContent */,
 				FF27E91623C702D50083E9EA /* SceneDelegate.swift */,
 				FF27E91A23C702D90083E9EA /* Assets.xcassets */,
 				FF27E91F23C702D90083E9EA /* LaunchScreen.storyboard */,
 				FF27E92223C702D90083E9EA /* Info.plist */,
+				FF27E91C23C702D90083E9EA /* PreviewContent */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

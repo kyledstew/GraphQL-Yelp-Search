@@ -45,7 +45,7 @@ extension BusinessSearchViewModel: ViewModel {
     func notify(event: Event) {
         switch event {
         case .searchSelected:
-            guard state.searchQuery.isValid else { break}
+            guard state.searchQuery.isValid else { break }
             state.results.removeAll()
             state.loadingResults = true
             queryMoreData()
